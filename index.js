@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client({
-	partials: ['MESSAGE', 'CHANNEL', 'REACTION'],
-	ws: {
-		intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_BANS', 'GUILD_EMOJIS', 'GUILD_INTEGRATIONS', 'GUILD_WEBHOOKS', 'GUILD_INVITES', 'GUILD_VOICE_STATES', 'GUILD_MESSAGES', 'GUILD_MESSAGE_REACTIONS', 'GUILD_MESSAGE_TYPING', 'DIRECT_MESSAGES', 'DIRECT_MESSAGE_REACTIONS', 'DIRECT_MESSAGE_TYPING', 'GUILD_MEMBERS']
-	}
+	partials: ['MESSAGE', 'CHANNEL', 'REACTION']
 });
 const config = require('./settings.json');
 const mongoose = require('mongoose');
